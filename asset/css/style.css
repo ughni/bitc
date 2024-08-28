@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #fff;
+    z-index: 9999;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .nav-judul h2{
+    padding: 1rem;
+    text-decoration: dashed;
+    font-family: viga;
+}
+
+.navbar .nav-judul span {
+    color:rgb(255, 217, 0);
+}
+
+.navbar .nav-link {
+    display: flex;
+}
+
+.navbar .nav-link li {
+    margin: 0 1rem;
+}
+
+.navbar .nav-link li a {
+    font-family: viga;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav-link li a:hover {
+    color: rgb(69, 79, 186);
+}
+
+.navbar .nav-login {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-login a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-family: viga;
+}
+
+.navbar .nav-login .login {
+    color: #fff;
+    padding: 0.5rem;
+    background: black;
+}
+
+.navbar .nav-login .login:hover {
+    background-color: rgb(165, 162, 162);
+}
+
+
+.navbar .nav-login .nav-menu a{
+    display: none;
+    background: transparent;
+}
+
+/* navbar end */
+
+/* hiro start */
+.hiro {
+    position: relative;
+    height: 100vh;
+}
+.hiro .row{
+    padding: 7rem 0;
+    align-items: center;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+}
+
+.hiro .row .col1 {
+    width: 50%;
+    padding: 0 3rem;
+}   
+.hiro .row .col1 h1 {
+    font-size: 60px;
+    font-family: viga;
+}
+
+.hiro .row .col1 h1 span { 
+    color:rgb(255, 217, 0) ;
+}
+
+.hiro .row .col1 p {
+ font-weight: 400;
+ padding: 4rem 0;
+}
+
+.hiro .row .col2 {
+    width: 50%;
+    text-align: center;
+}
+
+.hiro .row .col1 a {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 1rem;
+    background: rgb(255, 255, 6);
+    text-decoration: none;
+}
+
+.hiro .row .col1 a:hover {
+    color: #fff;
+    border: 2px solid rgb(107, 95, 95);
+    background: rgb(168, 168, 2);
+}
+
+.hiro .row .col1 img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.hiro .row .col2 img {
+    width: 500px;
+}
+/* hiro end */
+
+/* about start */
+.about {
+    display: grid;
+    justify-items: center;
+}
+
+.about .row1 {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    width: 90%;
+    padding: 3rem 2rem;
+    background: #b7b1b1;
+}
+
+.about .row1 .col3 {
+    width: 50%;
+}
+
+.about .row1 .col3 h1 {
+    font-size: 35px;
+    font-family: viga;
+}
+
+.about .row1 .col4 {
+    width: 50%;
+}
+
+.about .row1 .col4 p {
+    font-size: 15px;
+    padding: 0 0 1.5rem 0;
+}
+
+.about .row1 .col4 a {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-radius: 30px;
+    font-family: viga;
+    color: #fff;
+    background: rgb(0, 0, 0);
+}
+
+.about .row1 .col4 a:hover {
+    background: rgb(55, 55, 55);
+}
+
+.about .row1 .col5 img{
+    width: 100%;
+}
+
+/* about end */
+
+
+/* media query */
+@media  screen and (max-width:1195px) {
+    .hiro .row .col1 p {
+        padding: 0rem 0rem 1rem 0;
+    }
+}
+
+
+@media  screen and (max-width: 1033px) {
+    .hiro .row{
+        padding: 6rem 0;
+    }
+    .hiro .row .col1 h1 {
+        font-size: 40px;
+    }
+    .hiro .row .col1 p {
+        font-size: 14px;
+    }
+    .hiro .row .col1 img {
+        width: 80px;
+    }
+    .hiro .row .col2 img {
+        width: 400px;
+    }
+}
+
+@media  screen and (max-width:830px) {
+    .hiro .row{
+        padding: 8rem 0;
+    }
+    .hiro .row .col1 img {
+        width: 60px;
+    }
+}
+
+@media  screen and (max-width:801px) {	
+    .hiro .row  {
+        padding: 4rem 0;
+    }
+}
+
+@media  screen and (max-width:717px) {	
+    .hiro .row .col1 h1 {
+        font-size: 30px;
+    }
+    .hiro .row .col1 p {
+        font-size: 12px;
+    }
+    .hiro .row .col1 a {
+        font-size: 14px;
+        padding: 0.7rem;
+    }
+    .hiro .row .col1 img {
+        width: 50px;
+    }
+    .hiro .row .col2 img {
+        width: 300px;
+    }
+}
+
+@media  screen and (max-width:639px) {	
+    .navbar .nav-link li a {
+     font-size: 15px;
+    }
+    .hiro .row {
+        padding: 5.5rem 0;
+        flex-wrap: wrap;
+    }
+    .hiro .row .col1 {
+        width: 100%;
+    }
+    .hiro .row .col2 {
+        width: 100%;
+    }
+    .hiro .row .col1 img {
+        width: 80px;
+        margin-left: 10px;
+    }
+    html {
+        font-size: 80%;
+    }
+}
+
+@media  screen and (max-width:546px) { 
+    .navbar {
+        justify-content: space-around;
+    }
+    .navbar .nav-link {
+        display: none;
+    }
+    .navbar  .nav-login .nav-menu .menu {
+        display: inline-block;
+        margin:  1rem 0;
+    }
+}
